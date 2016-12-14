@@ -15,4 +15,9 @@ class DefaultController extends Controller
 		$this->show('default/home');
 	}
 
+	public function test() {
+		$monContenuDeTest = 'Je suis un contenu de test';
+		$this->show('default/mon-test', array('contenu' => $monContenuDeTest));
+	}
+
 }
